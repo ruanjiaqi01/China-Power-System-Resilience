@@ -1,4 +1,6 @@
 # China-Power-System-Resilience
+## Overview
+This is to analyze the future data of climate change on the resilience impact of the power system in China, we mainly analyzed the data of 2020, 2030, 2040, 2050, 2060 including SSP245, SSP370, SSP460 and SSP585 four scenarios, in each subfolder has the corresponding name indication. The data submitted by us can be used to optimize the OPF model to analyze the resilience of China's power system in the future, including wind_gen, node_false, gen, branch_false, load and structure, as well as the average monthly wind speed and monthly temperature of each province based on each SSP scenario, named wind_month and temp.
 ## wind_month
 The average monthly wind speed of each province under different SSP scenarios and years, the horizontal axis is the province, and the vertical axis is 12 months
 ## wind_gen
