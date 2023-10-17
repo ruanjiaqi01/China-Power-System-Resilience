@@ -7,15 +7,15 @@ The average monthly wind speed of each province under different SSP scenarios an
 ### wind_gen
 The hourly wind speed simulation value of each generator under different SSP scenarios and years, the horizontal axis is the province where the generator set is located, and the vertical axis is the time 365*24. We calculate the monthly mean of the past hour data, and then use the future monthly mean to mean align the past data, and then use the Weibull distribution fitting and then randomly generate them according to the generation set plan and generation set location. Past hour data is from ERA5.
 ### node_false
-The fault simulation values of each province in different SSP scenarios and years, the horizontal axis is the province, the vertical axis is the time 365*24, 0 indicates no fault, and 1 indicates fault
+The fault simulation values of each province in different SSP scenarios and years, the horizontal axis is the province, the vertical axis is the time 365*24, 0 indicates no fault, and 1 indicates fault. Based on the simulated wind speed data of each generator set, we calculate the failure rate through the Logistic function (parameter a=-13, parameter b=0.4), which is defined as a fault if it is greater than the random number compared to the random number generation.
 ### gen
-The scale value of wind power simulated according to the wind speed value in different SSP scenarios and years in each generator set, the horizontal axis is the province where each generator set is located, the vertical axis is 365*24, and the maximum P is 1e6
+The scale value of wind power simulated according to the wind speed value in different SSP scenarios and years in each generator set, the horizontal axis is the province where each generator set is located, the vertical axis is 365*24, and the maximum P is 1e6. The function of generator power has been given in the article, where V_cut_in = 2, V_rated = 8, V_cut_out = 20. Mainly because the average wind speed of the region and the wind speed of the point exist in magnitude, so we adjusted it down by V_rated.
 ### branch_false
-For each branch simulated according to the wind speed value in different SSP scenarios and years, the first two branches connect the provinces, and the vertical axis is 365*24, 0 indicates no fault, and 1 indicates fault
+For each branch simulated according to the wind speed value in different SSP scenarios and years, the first two branches connect the provinces, and the vertical axis is 365*24, 0 indicates no fault, and 1 indicates fault. Based on the simulated wind speed data of each branch, we calculate the failure rate through the Logistic function (parameter a=-13.2, parameter b=0.4), which is defined as a fault if it is greater than the random number compared to the random number generation.
 ### temp
-The temperature values of each province under different SSP scenarios and years, and the unit is K
+The temperature values of each province under different SSP scenarios and years, and the unit is K, the data is from five models from CMIP6 to get a more stable result.
 ### load
-Load scale of each province simulated according to temperature and random fluctuation, the horizontal axis is the province, the vertical axis is 365*24, the unit is % (csv)
-Forecast future load demand for each province （mat）
+Load scale of each province simulated according to temperature and random fluctuation, the horizontal axis is the province, the vertical axis is 365*24, the unit is % (csv), The relationship between temperature and load has already been explained in the article, in addition we have increased volatility by 5%.
+Forecast future load demand for each province （mat）, which has already been explained in the article.
 ### structure
-Includes the model architecture of lines, nodes, and generators at each point in time
+Includes the model architecture of lines number and connection, nodes, and generators at each point in time, which may be different in different years.
