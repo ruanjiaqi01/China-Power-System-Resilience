@@ -15,6 +15,6 @@ For each branch simulated according to the wind speed value in different SSP sce
 ### temp
 The temperature values of each province under different SSP scenarios and years, and the unit is K, the data is from five models from CMIP6 to get a more stable result.
 ### load
-Load scale of each province simulated according to temperature and random fluctuation, the horizontal axis is the province, the vertical axis is 365*24, the unit is MW, The relationship between temperature and load has already been explained in the article, in addition we have increased volatility by 5%.
+Load scale of each province simulated according to temperature, social development and random fluctuation, the horizontal axis is the province, the vertical axis is 365*24, the unit is MW. The relationship between temperature and load has already been explained in the article, in addition we have increased volatility by 5%.
 ### structure
 Includes the model architecture of lines number and connection, nodes, and generators at each point in time, which may be different in different years.
