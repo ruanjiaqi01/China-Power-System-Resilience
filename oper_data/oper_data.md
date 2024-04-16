@@ -1,3 +1,18 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:ed24d48781de0db37aa5edd3481d3859f465a1af7c5482e76d9a79cd560ea21f
-size 940
+# oper_data
+## Overview
+This is the data used to assess the stability of the power system, all the data were obtained from the previous climate data, saved in mat format
+## Description
+### Initial data
+Record the initial state of each simulated system in the first hour, derived from a model with no ramp rate limitation (5 groups in total)
+### Load data
+Load modelling, documenting the original load profile (excluding temperature coefficients) (5 groups)
+### System data
+Documentation of the generator/line installation status (5 groups).
+### Wind false data
+Documentation of temperature-dependent power generation coefficients, node and line failure conditions and failure times, wind power generation coefficients (5*4 groups).
+### Hydro_coff
+Coefficients that react to changes in hydroelectricity during dry/abundant water periods.
+### Pro_info
+Province code
+### PV_power
+percentage of solar power generation moments
