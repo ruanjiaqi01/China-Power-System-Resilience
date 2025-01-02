@@ -25,4 +25,4 @@ This is the code for processing climate data, the exact file description is in t
 This is the code for assessing climate risk, described in the readme file in the file
 ## Data download
 The cmip6 data can be download through https://aims2.llnl.gov/search/cmip6/ and the era5 data can be download through https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset.
->>>>>>> f760520828474302575a622dce9f7b5944024294
+
