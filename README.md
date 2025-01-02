@@ -20,9 +20,9 @@ Load scale of each province simulated according to temperature, social developme
 This is the data that we will eventually use to evaluate the stability of the power system, and the detailed description of each data is in the readme file in the folder.
 ## Code description
 ### ec_code
-This is the code for processing climate data, the exact file description is in the readme file in the folder
+This is the code for processing climate data, the exact file description is in the readme file in the file
 ### climate_code
-This is the code for assessing climate risk, described in the readme file in the folder
+This is the code for assessing climate risk, described in the readme file in the file
 ## Data download
 The cmip6 data can be download through https://aims2.llnl.gov/search/cmip6/ and the era5 data can be download through https://cds.climate.copernicus.eu/cdsapp#!/search?type=dataset.
 >>>>>>> f760520828474302575a622dce9f7b5944024294
