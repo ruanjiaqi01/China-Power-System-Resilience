@@ -17,8 +17,6 @@ The fault simulation values of each province in different SSP scenarios and year
 The scale value of wind power simulated according to the wind speed value in different SSP scenarios and years in each generator set, the horizontal axis is the province where each generator set is located, the vertical axis is 365*24. The function of generator power has been given in the article, where V_cut_in = 2, V_rated = 8, V_cut_out = 20, the unit is MW.
 ### branch_false
 For each branch simulated according to the wind speed value in different SSP scenarios and years, the first two branches connect the provinces, and the vertical axis is 365*24, 0 indicates no fault, and 1 indicates fault. Based on the simulated wind speed data of each branch, we calculate the failure rate through the Logistic function (parameter a=-13.2, parameter b=0.4), which is defined as a fault if it is greater than the random number compared to the random number generation.
-### temp
-The temperature values of each province under different SSP scenarios and years, and the unit is K, the data is from five models from CMIP6 to get a more stable result.
 ### load
 Load scale of each province simulated according to temperature, social development and random fluctuation, the horizontal axis is the province, the vertical axis is 365*24, the unit is MW. The relationship between temperature and load has already been explained in the article, in addition we have increased volatility by 5%.
 ### structure
