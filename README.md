@@ -7,8 +7,6 @@ size 3644
 ## Overview
 This is to analyze the future data of climate change on the resilience impact of the power system in China, we mainly analyzed the data of 2020, 2030, 2040, 2050, 2060 including SSP126, SSP245, SSP370 and SSP585 four scenarios, in each subfolder has the corresponding name indication. The data submitted by us can be used to optimize the OPF model to analyze the resilience of China's power system in the future, including wind_gen, node_false, gen, branch_false, load and structure, as well as the average monthly wind speed and monthly temperature of each province based on each SSP scenario, named wind_month and temp.
 ## Data description
-### wind_month
-The average monthly wind speed of each province under different SSP scenarios and years, the horizontal axis is the province, and the vertical axis is 12 months. We embed the data from five models from CMIP6 to get a more stable result. The determination of the provinces is obtained by entering latitude and longitude by the geographic inverter code function of Amap, the unit is m/s.
 ### wind_gen
 The hourly wind speed simulation value of each generator under different SSP scenarios and years, the horizontal axis is the province where the generator set is located, and the vertical axis is the time 365*24. We calculate the monthly mean of the past hour data, and then use the future monthly mean to mean align the past data, and then use the Weibull distribution fitting and then randomly generate them according to the generation set plan and generation set location. Past hour data is from ERA5, the unit is m/s.
 ### node_false
